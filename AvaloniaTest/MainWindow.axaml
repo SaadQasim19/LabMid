@@ -1,0 +1,45 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaTest.MainWindow"
+        Title="Student Login"
+        Width="420"
+        Height="430"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="30"
+                Spacing="12"
+                VerticalAlignment="Center">
+
+        <TextBlock Text="Student Login"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+        <TextBlock Text="Username"/>
+
+        <TextBox x:Name="UsernameTextBox"
+                 Watermark="Enter username"/>
+
+        <TextBlock Text="Password"/>
+
+        <TextBox x:Name="PasswordTextBox"
+                 PasswordChar="●"
+                 Watermark="Enter password"/>
+<CheckBox x:Name="ShowPasswordCheckBox"
+          Content="Show Password"
+          IsCheckedChanged="ShowPasswordCheckBox_IsCheckedChanged"/>
+
+        <TextBlock x:Name="AttemptsLabel"
+                   Text="3 attempts remaining"
+                   HorizontalAlignment="Center"/>
+
+        <Button x:Name="LoginButton"
+                Content="Login"
+                Click="LoginButton_Click"/>
+
+        <Button Content="Clear"
+                Click="ClearButton_Click"/>
+
+    </StackPanel>
+</Window>

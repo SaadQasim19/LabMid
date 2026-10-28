@@ -1,0 +1,44 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SplashScreenApp.SplashWindow"
+        Width="420"
+        Height="320"
+        WindowStartupLocation="CenterScreen"
+        SystemDecorations="None"
+        CanResize="False"
+        Background="White"
+        Title="Loading">
+
+    <StackPanel Margin="25"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Spacing="15">
+
+        <Image Source="avares://SplashScreenApp/Assets/logo.png"
+       Width="80"
+       Height="80"
+       Stretch="Uniform"/>
+
+        <TextBlock Text="My Application"
+                   FontSize="26"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+        <TextBlock Text="Please wait, loading..."
+                   HorizontalAlignment="Center"/>
+
+        <ProgressBar Name="LoadingProgress"
+                     Minimum="0"
+                     Maximum="100"
+                     Value="0"
+                     Width="320"
+                     Height="20"/>
+
+        <TextBlock Name="ProgressLabel"
+                   Text="0%"
+                   FontSize="16"
+                   HorizontalAlignment="Center"/>
+
+    </StackPanel>
+</Window>

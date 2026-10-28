@@ -1,0 +1,27 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SplashScreenApp.LoginWindow"
+        Width="350"
+        Height="260"
+        Title="Login Form"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="25" Spacing="12">
+        <TextBlock Text="Login Form"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+        <TextBox Name="UsernameBox"
+                 Watermark="Enter username"/>
+
+        <TextBox Name="PasswordBox"
+                 Watermark="Enter password"
+                 PasswordChar="*"/>
+
+        <Button Content="Login"
+                HorizontalAlignment="Stretch"
+                Click="LoginButton_Click"/>
+    </StackPanel>
+</Window>
